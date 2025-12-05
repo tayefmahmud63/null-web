@@ -17,7 +17,7 @@ export function LogoCloud({ logos }: LogoCloudProps) {
     <div className="relative mx-50 bg-gradient-to-r from-secondary via-transparent to-secondary py-6 md:border-x">
       <div className="-translate-x-1/2 -top-px pointer-events-none absolute left-1/2 w-screen border-t" />
 
-      <InfiniteSlider gap={62} reverse speed={60} speedOnHover={20}>
+      <InfiniteSlider gap={62} reverse duration={60} durationOnHover={20}>
         {logos.map((logo) => (
           <img
             alt={logo.alt}
