@@ -3,7 +3,7 @@ import { LogoCloud } from "@/components/ui/logo-cloud-4";
 
 export function ClientsLogo() {
   return (
-    <div className=" w-full py-24 px-4">
+    <div className="w-full section px-4 relative overflow-hidden">
      <div
         aria-hidden="true"
         className={cn(
@@ -12,7 +12,7 @@ export function ClientsLogo() {
           "blur-[30px]"
         )}
       />
-      <div className="w-full">
+      <div className="w-full max-w-6xl mx-auto text-center">
         <h2 className="mb-5 text-center">
           <span className="block font-medium text-2xl text-muted-foreground">
             Already used by

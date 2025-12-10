@@ -1,3 +1,5 @@
+'use client';
+
 import {
 	FacebookIcon,
 	GithubIcon,
@@ -85,7 +87,7 @@ export function MinimalFooter() {
 	];
 	return (
 		<footer className="relative">
-  <div className="bg-[radial-gradient(35%_80%_at_30%_0%,--theme(--color-foreground/.1),transparent)] mx-auto max-w-4xl">
+	<div className="bg-[radial-gradient(35%_80%_at_30%_0%,--theme(--color-foreground/.1),transparent)] mx-auto max-w-4xl section">
     
     {/* removed top border */}
     
@@ -96,7 +98,7 @@ export function MinimalFooter() {
           <Grid2X2Plus className="size-8" />
         </a>
 
-        <p className="text-muted-foreground max-w-sm font-mono text-sm text-balance">
+        <p className="text-muted-foreground max-w-sm font-mono text-sm text-balance" suppressHydrationWarning>
           A comprehensive financial technology platform.
         </p>
 
@@ -147,7 +149,7 @@ export function MinimalFooter() {
 
     {/* removed bottom border */}
 
-    <div className="flex max-w-4xl flex-col justify-between gap-2 pt-2 pb-5">
+		<div className="flex max-w-4xl flex-col justify-between gap-2 pt-2 pb-5">
       <p className="text-muted-foreground text-center font-thin">
         © <a href="https://www.nuullabz.con">Null Labz</a>. All rights reserved {year}
       </p>

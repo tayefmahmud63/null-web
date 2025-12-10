@@ -45,34 +45,12 @@ export function ContactPage() {
 	];
 
 	return (
-		<div className=" w-full">
-			<div className="mx-auto h-full max-w-6xl ">
-	
-		
-		
-				<div className="relative flex h-full min-h-[320px] items-center justify-center">
-					<div/>
-
-					<div className="relative z-1 space-y-6">
-						<h2 className="text-center text-3xl font-bold md:text-4xl">
-							Find us online
-						</h2>
-						<div className="flex flex-wrap items-center gap-4">
-							{socialLinks.map((link) => (
-								<a
-									key={link.label}
-									href={link.href}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="bg-muted/50 hover:bg-accent flex items-center gap-x-2 rounded-full "
-								>
-									<link.icon className="size-4" />
-									<span className="font-mono text-sm font-medium tracking-wide">
-										{link.label}
-									</span>
-								</a>
-							))}
-						</div>
+		<div className="w-full">
+			<div className="mx-auto h-full max-w-6xl">
+				<div className="relative flex h-full min-h-[240px] items-center justify-center">
+					<div className="relative z-1 space-y-6 text-center">
+						<h2 className="text-center text-3xl font-bold md:text-4xl">Contact</h2>
+						<p className="text-muted-foreground">Use the contact form or the channels listed in Resources.</p>
 					</div>
 				</div>
 			</div>

@@ -118,5 +118,65 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+  /* Ensure the root containers never allow horizontal scroll */
+  html, #__next {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Prevent images and svgs from creating overflow */
+  img, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* Section spacing utility to keep consistent vertical rhythm */
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  @media (min-width: 768px) {
+    .section {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  /* Smaller and larger section variants for finer control */
+  .section-sm {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  @media (min-width: 768px) {
+    .section-sm {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .section-lg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  @media (min-width: 768px) {
+    .section-lg {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  /* Helper to show text before image on small screens (swap order)
+     Use on containers that have image + text as siblings. */
+  .reverse-on-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  @media (min-width: 768px) {
+    .reverse-on-mobile {
+      flex-direction: row;
+    }
   }
 }
