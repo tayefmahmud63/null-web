@@ -85,15 +85,15 @@ export function MinimalFooter() {
 	];
 	return (
 		<footer className="relative">
-  <div className="bg-[radial-gradient(35%_80%_at_30%_0%,--theme(--color-foreground/.1),transparent)] mx-auto max-w-4xl">
+  <div className="bg-[radial-gradient(35%_80%_at_50%_0%,--theme(--color-foreground/.1),transparent)] mx-auto max-w-full px-152">
     
     {/* removed top border */}
     
-    <div className="grid max-w-4xl grid-cols-6 gap-6 p-4">
-      <div className="col-span-6 flex flex-col gap-5 md:col-span-4">
+    <div className="grid max-w-4xl grid-cols-6 gap-12 p-4 py-8">
+      <div className="col-span-6 flex flex-col gap-5 md:col-span-4 ">
         
-        <a href="#" className="w-max opacity-25">
-          <Grid2X2Plus className="size-8" />
+        <a href="#" className="w-max ">
+          <img src="/null_labz_logo_black.svg" alt="Null Labz" className="h-6" />
         </a>
 
         <p className="text-muted-foreground max-w-sm font-mono text-sm text-balance">
@@ -149,7 +149,7 @@ export function MinimalFooter() {
 
     <div className="flex max-w-4xl flex-col justify-between gap-2 pt-2 pb-5">
       <p className="text-muted-foreground text-center font-thin">
-        © <a href="https://www.nuullabz.con">Null Labz</a>. All rights reserved {year}
+        © <a href="https://www.nullabz.con">Null Labz</a>. All rights reserved {year}
       </p>
     </div>
   </div>

@@ -67,15 +67,10 @@ export function Hero() {
   ];
 
   return (
-    <div className="container mx-auto px-4 min-h-screen bg-background">
+    <div className="container mx-auto px-4 min-h-screen bg-background ">
       <header>
         <div className="flex h-16 items-center justify-between">
-          <a href="#" className="flex items-center gap-2">
-            <div className="flex items-center space-x-2">
-              <Bird className="h-8 w-8" />
-              <span className="font-mono text-xl font-bold">Myna UI</span>
-            </div>
-          </a>
+          <img src="/null_labz_logo_black.svg" alt="Null Labz" className="h-6" />
 
           <nav className="hidden md:flex items-center space-x-8">
             {navigationItems.map((item) => (
@@ -94,7 +89,7 @@ export function Hero() {
               variant="default"
               className="rounded-none hidden md:inline-flex bg-[#141414] hover:bg-[#FF6B2C]/90 font-mono"
             >
-              GET STARTED <ArrowRight className="ml-1 w-4 h-4" />
+              Contact Us <ArrowRight className="ml-1 w-4 h-4" />
             </Button>
             <Sheet>
               <SheetTrigger asChild>
@@ -115,7 +110,7 @@ export function Hero() {
                     </a>
                   ))}
                   <Button className="cursor-pointer rounded-none bg-[#141414] hover:bg-[#FF6B2C]/90 font-mono">
-                    GET STARTED <ArrowRight className="ml-1 w-4 h-4" />
+                    Free Consultation <ArrowRight className="ml-1 w-4 h-4" />
                   </Button>
                 </nav>
               </SheetContent>
@@ -200,7 +195,7 @@ export function Hero() {
                 size="lg"
                 className="cursor-pointer rounded-none mt-12 bg-[#141414] hover:bg-[#FF6B2C]/90 font-mono"
               >
-                GET STARTED <ArrowRight className="ml-1 w-4 h-4" />
+                Free Consultation <ArrowRight className="ml-1 w-4 h-4" />
               </Button>
             </motion.div>
           </div>

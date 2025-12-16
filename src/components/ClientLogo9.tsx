@@ -41,11 +41,11 @@ export const clientLogos = [
 
 const ClientLogo9: React.FC = () => {
   return (
-    <section className="ezy__clients9 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
-      <div className="container px-4">
-        <div className="grid grid-cols-12 md:items-end text-center gap-6">
-          <div className="col-span-12 md:col-span-9 mb-6 sm:mb-12 text-start">
-            <div className="grid grid-cols-12">
+    <section className="w-full flex flex-col items-center justify-center min-h-screen py-20 px-4">
+      <div className="w-full max-w-6xl px-4 flex flex-col items-center">
+        <div className="grid grid-cols-12 md:items-end  gap-6 w-full">
+          <div className="col-span-12 md:col-span-9 mb-6 sm:mb-12 flex flex-col   mx-auto">
+            <div className="grid grid-cols-12 w-full">
               <div className="col-span-12 xl:col-span-9">
                 <h2 className="font-bold text-[25px] lg:text-[45px] leading-none mb-6">
                   Our Trusted Clients
