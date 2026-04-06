@@ -8,21 +8,21 @@ const steps = [
         title: "Start with Your Idea",
         description: "With our consultation session, you can share your idea and vision while gaining clarity on challenges, scope, and the best way forward.",
         link: "#",
-        image: "/assets/workflow1.png",
+        image: "/assets/workflow1.webp",
     },
     {
         id: 2,
         title: "Design & Prototype",
         description: "Our engineers design 3D models, 3D print enclosures, assemble and solder circuits, and program the system into a functional prototype.",
         link: "#",
-        image: "/assets/workflow2.png",
+        image: "/assets/workflow2.webp",
     },
     {
         id: 3,
         title: "Build Test Ship & Deploy",
         description: "After rigorous testing, we deliver a complete package including product, source code, designs, and full documentation for seamless deployment.",
         link: "#",
-        image: "/assets/workflow3.png",
+        image: "/assets/workflow3.webp",
     },
 ];
 

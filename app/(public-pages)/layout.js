@@ -3,7 +3,7 @@ import Navbar from '@/components/navbar';
 
 export const metadata = {
     title: 'Null Labz',
-    description: 'Complete Embedded Solution',
+    description: 'end-to-end Embedded Solution',
     appleWebApp: {
         title: 'Null Labz',
     },

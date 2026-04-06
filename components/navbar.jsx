@@ -14,9 +14,9 @@ export default function Navbar() {
 
     const links = [
         { name: 'Home', href: '/' },
-        { name: 'Services', href: '#' },
-        { name: 'Portfolio', href: '#' },
-        { name: 'Contact', href: '#' }
+        { name: 'Services', href: '/services' },
+        { name: 'Careers', href: '/careers' },
+        { name: 'Contact', href: '/contact-us' }
     ];
 
     useEffect(() => {
@@ -43,7 +43,7 @@ export default function Navbar() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
             >
-                <a href='#'>
+                <a href='/'>
                     <Image src='/assets/logo.svg' alt='logo' className='h-8.5 w-auto' width={205} height={48} />
                 </a>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Link href='/' className='btn glass'>
+                    <Link href='/start-your-project' className='btn glass'>
                         Start Your Project
                     </Link>
                 </div>
@@ -71,8 +71,8 @@ export default function Navbar() {
                 ))}
 
 
-                <Link href='/' className='btn glass' onClick={() => setIsOpen(false)}>
-                    Sign Up
+                <Link href='/start-your-project' className='btn glass' onClick={() => setIsOpen(false)}>
+                    Start Your Project
                 </Link>
 
                 <button onClick={() => setIsOpen(false)} className='rounded-md p-2 glass'>

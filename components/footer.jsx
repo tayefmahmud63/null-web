@@ -6,9 +6,10 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
     const links = [
-        { name: 'Terms of Service', href: '#' },
-        { name: 'Privacy Policy', href: '#p' },
-        { name: 'Security', href: '#' },
+        { name: 'Terms & Conditions', href: '/terms-and-conditions' },
+        { name: 'Privacy Policy', href: '/privacy-policy' },
+        { name: 'Shipping & Delivery', href: '/shipping-delivery' },
+        { name: 'Refund Policy', href: '/refund-policy' },
    
     ];
     return (

@@ -18,12 +18,11 @@ export default function Page() {
             
 
 
-            <HeroSection />
-            <TrustedCompanies />
+
             <Features />
             <WorkflowSteps />
             <PricingPlans />
-            <Testimonials />
+
             <CallToAction />
             <FaqSection />
             

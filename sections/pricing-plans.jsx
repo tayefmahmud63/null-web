@@ -9,56 +9,58 @@ export default function PricingPlans() {
         {
             icon: RocketIcon,
             title: 'Starter',
-            description: 'For individuals and small teams',
-            price: '$19',
+            description: 'For individuals and early stage ideas',
+            price: '$99',
             buttonText: 'Get Started',
             features: [
-                'Up to 10 projects',
-                '10 AI tasks/month',
-                'Basic text generation',
-                'Simple chatbot access',
-                'Email support only',
-                'Community resources'
+                'Idea consultation & feasibility analysiss',
+                'Basic system architecture planning',
+                'Initial component selection',
+                'Rough cost estimation',
+                'Simple prototype guidance',
+                '30 Minute Consultation Session'
             ],
         },
         {
             icon: ZapIcon,
             title: 'Professional',
-            description: 'For growing teams and startups',
-            price: '$49',
+            description: 'For startups and product development - Hardware cost not included',
+            price: '$999',
             mostPopular: true,
-            buttonText: 'Upgrade Now',
-            features: [
-                'Unlimited AI tasks',
-                'API integration',
-                'Text & image outputs',
-                'Priority chat & email support',
-                'Detailed analytics',
-                'Team collaboration'
-            ],
+            buttonText: 'Start Building',
+features: [
+    'Full system design (hardware & firmware)',
+    '3D modeling & prototype development',
+    'Circuit design & assembly',
+    'Firmware development (ESP32 / MCU)',
+    'Basic cloud & API integration',
+    'Testing & iteration',
+    'Priority technical consultation'
+],
         },
         {
             icon: CrownIcon,
             title: 'Enterprise',
             description: 'For enterprises and agencies',
-            price: '$149',
-            buttonText: 'Contact Sales',
-            features: [
-                'Custom AI models',
-                'Team access control',
-                'Dedicated account manager',
-                'Secure private API',
-                'SLA uptime guarantee',
-                '24/7 premium support'
-            ],
+            price: 'Custom Pricing',
+            buttonText: 'Contact Us',
+features: [
+    'End-to-end product development',
+    'Scalable IoT architecture',
+    'Advanced cloud & API integration',
+    'Mobile & web application development',
+    'Production-ready design (DFM)',
+    'Dedicated project support',
+    'Deployment & scaling assistance'
+],
         },
     ];
 
     return (
         <section className="mt-32">
             <SectionTitle
-                title="Our Pricing Plans"
-                description="A visual collection of our most recent works - each piece crafted with intention, emotion and style."
+                title="Flexible Plans for Every Stage of Your Product"
+                description="From idea validation to full scale production, choose the level that fits your needs."
             />
 
             <div className='mt-12 flex flex-wrap items-center justify-center gap-6'>
@@ -81,7 +83,7 @@ export default function PricingPlans() {
                             <span>{item.title}</span>
                         </div>
                         <h3 className='mt-4 text-2xl font-semibold'>
-                            {item.price} <span className='text-sm font-normal'>/month</span>
+                            {item.price} <span className='text-sm font-normal'></span>
                         </h3>
                         <p className='text-gray-200 mt-3'>{item.description}</p>
                         <button className={`mt-7 rounded-md w-full btn ${item.mostPopular ? 'bg-white text-gray-800' : 'glass'}`}>
