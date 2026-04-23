@@ -1,3 +1,4 @@
+'use client';
 import { ArrowRightIcon } from "lucide-react";
 import { motion } from "framer-motion";
 

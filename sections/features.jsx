@@ -1,3 +1,4 @@
+'use client';
 import SectionTitle from "@/components/section-title";
 import { CircuitBoard, EthernetPort, Drill } from "lucide-react";
 import { motion } from "framer-motion";

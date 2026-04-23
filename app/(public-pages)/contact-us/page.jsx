@@ -1,4 +1,21 @@
+
+
 import { ArrowRightIcon } from "lucide-react";
+
+export const metadata = {
+    title: 'Contact Us',
+    description:
+        'Get in touch with Null Labz. Have an idea or project in mind? We help turn ideas into functional, deployable IoT and embedded systems products.',
+    openGraph: {
+        title: 'Contact Us | Null Labz',
+        description:
+            'Get in touch with Null Labz. Have an idea or project in mind? Let\'s talk and bring it to life.',
+        url: 'https://nullabz.com/contact-us',
+    },
+    alternates: {
+        canonical: 'https://nullabz.com/contact-us',
+    },
+};
 
 export default function ContactPage() {
   return (

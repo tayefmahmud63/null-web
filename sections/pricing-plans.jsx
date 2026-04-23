@@ -1,3 +1,4 @@
+'use client';
 import SectionTitle from "@/components/section-title";
 import { CheckIcon, CrownIcon, RocketIcon, ZapIcon } from "lucide-react";
 import { motion } from "framer-motion";

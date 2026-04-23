@@ -1,3 +1,4 @@
+'use client';
 import { PlayCircleIcon } from "lucide-react";
 import { motion } from "framer-motion";
 

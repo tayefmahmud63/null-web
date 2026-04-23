@@ -1,3 +1,4 @@
+'use client';
 import { motion } from "framer-motion";
 import SectionTitle from "@/components/section-title";
 import { ExternalLinkIcon } from "lucide-react";

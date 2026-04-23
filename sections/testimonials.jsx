@@ -1,3 +1,4 @@
+'use client';
 import SectionTitle from "@/components/section-title";
 import { motion } from "framer-motion";
 import { useRef } from "react";

@@ -1,5 +1,21 @@
 import { ArrowRightIcon } from "lucide-react";
 
+export const metadata = {
+    title: 'Start Your Project',
+    description:
+        'Ready to build? Share your idea, project stage, and goals with Null Labz — we turn concepts into functional, market-ready IoT and embedded systems products.',
+    openGraph: {
+        title: 'Start Your Project | Null Labz',
+        description:
+            'Share your idea with Null Labz and we\'ll help turn it into a real, market-ready product.',
+        url: 'https://nullabz.com/start-your-project',
+    },
+    alternates: {
+        canonical: 'https://nullabz.com/start-your-project',
+    },
+};
+
+
 export default function StartProjectPage() {
   const stages = ["Idea", "Prototype", "MVP", "Production"];
 
