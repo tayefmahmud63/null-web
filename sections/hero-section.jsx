@@ -1,6 +1,7 @@
 'use client';
 import { PlayCircleIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HeroSection() {
 
@@ -51,13 +52,17 @@ export default function HeroSection() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    <button className="btn max-md:w-full glass py-3">
-                        Start Your Project
-                    </button>
-                    <button className="btn max-md:w-full glass flex items-center justify-center gap-2 py-3">
-                        <PlayCircleIcon className="size-4.5" />
-                        Explore Our Work
-                    </button>
+<Link href="/start-your-project">
+  <button className="btn max-md:w-full glass py-3 w-full">
+    Start Your Project
+  </button>
+</Link>
+<Link href="/our-works">
+  <button className="btn max-md:w-full glass flex items-center justify-center gap-2 py-3 w-full">
+    <PlayCircleIcon className="size-4.5" />
+    Explore Our Work
+  </button>
+</Link>
                 </motion.div>
             </motion.section>
         </>

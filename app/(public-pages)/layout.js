@@ -3,6 +3,10 @@
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 
+import { Syne, DM_Mono } from 'next/font/google'
+const syne = Syne({ subsets: ['latin'], variable: '--font-syne' })
+const dmMono = DM_Mono({ subsets: ['latin'], weight: ['300','400','500'], variable: '--font-dm-mono' })
+
 export const metadata = {
     metadataBase: new URL('https://nullabz.com'),
     title: {
