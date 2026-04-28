@@ -2,6 +2,8 @@
 
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
+import VisitTracker from '@/components/visit-tracker';
+
 
 import { Syne, DM_Mono } from 'next/font/google'
 const syne = Syne({ subsets: ['latin'], variable: '--font-syne' })
@@ -56,6 +58,7 @@ export const metadata = {
 export default function Layout({ children }) {
     return (
         <>
+            <VisitTracker />
             <Navbar />
             {children}
             <Footer />

@@ -10,23 +10,37 @@ const EMAILJS_PUBLIC_KEY  = "6f_i7GjBZTngzXHeE";
 
 export default function ContactForm() {
   const formRef = useRef();
-  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  const [status, setStatus] = useState("idle");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("sending");
 
+    const formData = new FormData(formRef.current);
+    const name    = formData.get("from_name");
+    const email   = formData.get("from_email");
+    const message = formData.get("message");
+
     try {
+      // 1. Save to Supabase
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      // 2. Send email via EmailJS
       await emailjs.sendForm(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         formRef.current,
         EMAILJS_PUBLIC_KEY
       );
+
       setStatus("success");
       formRef.current.reset();
     } catch (err) {
-      console.error("EmailJS error:", err);
+      console.error("Error:", err);
       setStatus("error");
     }
   };
@@ -34,7 +48,6 @@ export default function ContactForm() {
   return (
     <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
 
-      {/* Name */}
       <input
         type="text"
         name="from_name"
@@ -45,7 +58,6 @@ export default function ContactForm() {
                    focus:border-primary"
       />
 
-      {/* Email */}
       <input
         type="email"
         name="from_email"
@@ -56,7 +68,6 @@ export default function ContactForm() {
                    focus:border-primary"
       />
 
-      {/* Message */}
       <textarea
         rows="5"
         name="message"
@@ -67,7 +78,6 @@ export default function ContactForm() {
                    focus:border-primary resize-none"
       />
 
-      {/* Feedback */}
       {status === "success" && (
         <p className="text-green-400 text-sm text-center">
           ✅ Message sent! We'll get back to you soon.
@@ -79,7 +89,6 @@ export default function ContactForm() {
         </p>
       )}
 
-      {/* Button */}
       <button
         type="submit"
         disabled={status === "sending"}
