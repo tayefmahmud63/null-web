@@ -57,7 +57,7 @@ export default function HeroSection() {
     Start Your Project
   </button>
 </Link>
-<Link href="/our-works">
+<Link href="">
   <button className="btn max-md:w-full glass flex items-center justify-center gap-2 py-3 w-full">
     <PlayCircleIcon className="size-4.5" />
     Explore Our Work
