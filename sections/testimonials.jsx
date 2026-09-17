@@ -8,13 +8,34 @@ export default function Testimonials() {
 
     const ref = useRef([]);
     const data = [
-       
+        {
+            review: 'Tayef took on a very complicated and nuanced project, and delivered an excellent quality result.',
+            name: 'Canada',
+            about: 'Escape IoT',
+            rating: 5,
+            image: '/assets/escape_iot_client.webp',
+        },
         {
             review: 'Helped me research various solutions in our consultation sessions. Simply a great collaboration. Thanks!',
             name: 'Turkey',
             about: 'Balfaqih Studio',
             rating: 5,
-            image: '/assets/profile.webp',
+            image: '/assets/balfaqih_studio_client.webp',
+        },
+
+        {
+            review: 'Helped us bring our vision to life. Their team took our concept for a smart wristband and turned it into a working prototype',
+            name: 'Bangladesh',
+            about: 'Attention Network',
+            rating: 5,
+            image: '/assets/attention_network_client.webp',
+        },
+        {
+            review: "They explained everything in a way that made technical things easy.",
+            name: 'Bangladesh',
+            about: 'Cenco Lifestyle',
+            rating: 5,
+            image: '/assets/cenco_client.webp',
         },
         {
             review: 'Expert level skills in Linux and embedded systems and delivered a solution that was truly out of the box',
@@ -24,33 +45,13 @@ export default function Testimonials() {
             image: '/assets/profile.webp',
         },
         {
-            review: 'Helped us bring our vision to life. Their team took our concept for a smart wristband and turned it into a working prototype',
+            review: "Team Null Labz understood our idea quickly and turned it into a reliable IoT solution.",
             name: 'Bangladesh',
-            about: 'Attention Network',
+            about: 'UVTR InfoTech',
             rating: 5,
-            image: '/assets/profile.webp',
+            image: '/assets/uvtr_client.webp',
         },
-        {
-            review: "They explained everything in a way that made technical things easy.",
-            name: 'Malaysia',
-            about: 'Fahim Islam',
-            rating: 5,
-            image: '/assets/profile.webp',
-        },
-         {
-            review: 'A very skilled developer with a solid understanding in mechatronics. Communication was very clear.',
-            name: 'Turkey', 
-            about: 'Balfaqih Studio',
-            rating: 5,
-            image: '/assets/profile.webp',
-        },
-        {
-            review: 'Their consultation was exactly how I was thinking about the product',
-            name: 'Pakistan',
-            about: 'Faizan Rathod',
-            rating: 5,
-            image: '/assets/profile.webp',
-        },
+
     ];
     return (
         <section className="mt-32 flex flex-col items-center">
